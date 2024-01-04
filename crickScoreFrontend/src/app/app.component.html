@@ -1,0 +1,19 @@
+<header class="bg-purple-500 text-white py-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Brand Name -->
+    <h1 class="text-3xl font-bold">CrickScore</h1>
+
+    <!-- Navigation Menu -->
+    <nav class="flex space-x-6">
+      <a [routerLink]="'/home'" href="#" class="hover:text-gray-300 transition duration-300 hover:underline">Home</a>
+      <a [routerLink]="'/live'" href="#" class="hover:text-gray-300 transition duration-300 hover:underline">Live Matches</a>
+      <a [routerLink]="'/history'" href="#" class="hover:text-gray-300 transition duration-300 hover:underline">History</a>
+      <a [routerLink]="'/point-table'" href="#" class="hover:text-gray-300 transition duration-300 hover:underline">Point Table</a>
+    </nav>
+    <div></div>
+  </div>
+</header>
+<div class="px-28 py-8">
+  <router-outlet></router-outlet>
+</div>
+
